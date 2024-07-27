@@ -1,0 +1,761 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Display", sans-serif;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+html,
+body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 60rem;
+  background-image: url("./images/mainpage.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+header {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#toggler {
+  display: none;
+}
+.menu {
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: none;
+}
+
+header .logo {
+  height: 5rem;
+  width: 20rem;
+  background-image: url("./images/logo.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+header .pages {
+  display: flex;
+  gap: 3rem;
+}
+header .pages li {
+  list-style: none;
+}
+
+.abc {
+  position: absolute;
+  z-index: 2;
+}
+
+header .pages a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  z-index: 2;
+  color: black;
+  z-index: 2;
+  padding: 1rem;
+  position: relative;
+}
+
+header .pages a:hover {
+  border-radius: 5px;
+  background: #d9dee4;
+}
+
+.mega-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50rem;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 2px solid #7c7575;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+
+  transform: translateY(-100%);
+}
+
+.links {
+  border-left: 1px solid gray;
+  padding: 2rem;
+  padding-right: 15rem;
+}
+.links p {
+  font-size: 1.4rem;
+  margin: 1.3rem;
+  font-weight: 600;
+}
+.link {
+  align-self: center;
+}
+.link p {
+  text-align: left;
+  font-size: 1.4rem;
+  margin: 1.3rem;
+  font-weight: 600;
+}
+
+header .icons {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  z-index: 2;
+}
+header i {
+  font-size: 2.3rem;
+}
+
+.first-section {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: start;
+}
+.car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.car .box1 {
+  margin-top: 8rem;
+  background-image: url("./images/modelsup.png");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .box2 {
+  margin-top: 8rem;
+  background-image: url("./images/main1.png");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .box3 {
+  margin-top: 8rem;
+  background-image: url("./images/main.png");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .box4 {
+  margin-top: 6rem;
+  background-image: url("./images/mainn.png");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .box5 {
+  margin-top: 6rem;
+  background-image: url("./images/cybertruckup.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .box6 {
+  margin-top: 6rem;
+  background-image: url("./images/choose2.png");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+
+.car h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.inline {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.car .inline a {
+  text-decoration: underline;
+  font-size: 1.3rem;
+  color: #7e838a;
+}
+
+.car img {
+  width: 20rem;
+  height: auto;
+}
+
+.pages li:hover .mega-box {
+  opacity: 1;
+
+  transform: translateY(0%);
+}
+.pages li:hover .car {
+  opacity: 1;
+}
+
+.car .en1 {
+  margin-top: 8rem;
+  background-image: url("./images/panels.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .en2 {
+  margin-top: 8rem;
+  background-image: url("./images/roofs.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .en3 {
+  margin-top: 8rem;
+  background-image: url("./images/powerwallup.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+.car .en4 {
+  margin-top: 6rem;
+  background-image: url("./images/megapack.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  width: 20rem;
+}
+
+.car .ch1 {
+  margin-top: 8rem;
+  background-image: url("./images/ch.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 20rem;
+}
+.car .ch2 {
+  margin-top: 8rem;
+  background-image: url("./images/homech.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 20rem;
+}
+.car .ch3 {
+  margin-top: 8rem;
+  background-image: url("./images/superch.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 20rem;
+}
+
+.car .shop1 {
+  margin-top: 8rem;
+  background-image: url("./images/wheel.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 20rem;
+}
+.car .shop2 {
+  margin-top: 8rem;
+  background-image: url("./images/cap.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 25rem;
+}
+.car .shop3 {
+  margin-top: 8rem;
+  background-image: url("./images/bag.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 15rem;
+  width: 25rem;
+}
+
+.content {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content .text {
+  width: 40%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.content p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.content .btn {
+  width: 20rem;
+  height: 7rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+  background-color: transparent;
+  border: 3px solid black;
+  color: black;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+
+  border: none;
+  outline: none;
+}
+.slider {
+  width: 60rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10rem;
+}
+.images {
+  display: flex;
+  width: 100%;
+}
+.images .m1,
+.m2,
+.m3 {
+  width: 60rem;
+  height: 30rem;
+  margin-top: 10rem;
+}
+
+.images .m4 {
+  width: 60rem;
+  height: auto;
+}
+.set {
+  width: 60rem;
+  height: auto;
+}
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+}
+.dots label {
+  height: 1rem;
+  width: 1rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+.dots label:hover {
+  background-color: black;
+}
+
+.m2 {
+  transform: translateX(150%);
+}
+#img2:checked ~ .m2 {
+  transform: translateX(-100%);
+}
+#img2:checked ~ .m1 {
+  transform: translateX(150%);
+}
+.m3 {
+  transform: translateX(150%);
+}
+#img3:checked ~ .m3 {
+  transform: translateX(-220%);
+}
+#img3:checked ~ .m2 {
+  transform: translateX(150%);
+}
+#img3:checked ~ .m1 {
+  transform: translateX(150%);
+}
+
+.m4 {
+  transform: translateX(150%);
+}
+#img4:checked ~ .m4 {
+  transform: translateX(-290%);
+}
+#img4:checked ~ .m3 {
+  transform: translateX(150%);
+}
+#img4:checked ~ .m1 {
+  transform: translateX(150%);
+}
+
+#model3 {
+  width: 100%;
+  height: 60rem;
+  background-image: url("./images/car.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+}
+.head {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.data {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.price {
+  font-size: 2.4rem;
+  color: #2d2c2c;
+  border-bottom: 1.5px solid #2d2c2c;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.btn1 {
+  width: 25rem;
+  height: 4rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.one {
+  color: black;
+  background-color: white;
+}
+.one:hover {
+  background-color: #d4dadc;
+}
+.two {
+  color: white;
+  background-color: black;
+}
+.two:hover {
+  background-color: #242526;
+}
+#modelY {
+  width: 100%;
+  height: 65rem;
+  background-image: url("./images/ModelY.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+#modelX {
+  width: 100%;
+  height: 60rem;
+  background-image: url("./images/modelx.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+#modelS {
+  width: 100%;
+  height: 66rem;
+  background-image: url("./images/models.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+.white {
+  color: white;
+  border-bottom-color: white;
+}
+
+#cyber {
+  width: 100%;
+  height: 65rem;
+  background-image: url("./images/ttruck.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.cyber-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
+  border-radius: 0%;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  border: 0.5px solid rgba(255, 255, 255, 0.7);
+  margin-bottom: 8rem;
+}
+.cyber-btn:hover {
+  opacity: 0.8;
+}
+#cyber-logo {
+  height: 25rem;
+  width: 30rem;
+  background-image: url("./images/cyberlogo.png");
+  background-position: center;
+  background-size: cover;
+  margin-top: -3rem;
+}
+#solar {
+  width: 100%;
+  height: 66rem;
+  background-image: url("./images/house.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+}
+#roof {
+  width: 100%;
+  height: 66rem;
+  background-image: url("./images/roof.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+#powerwall {
+  width: 100%;
+  height: 66rem;
+  background-image: url("./images/powerwall.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+#accessories {
+  width: 100%;
+  height: 60rem;
+  background-image: url("./images/charge.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+}
+footer {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  gap: 3rem;
+}
+footer a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 998px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+  .container {
+    height: 90rem;
+  }
+
+  .content {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    justify-items: center;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  .menu {
+    font-size: 2rem;
+    display: block;
+    z-index: 3;
+    margin-right: 47rem;
+  }
+
+  .pages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    padding-right: 0.3rem;
+    z-index: 2;
+    height: 85rem;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  #toggler:checked ~ .pages {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .pages li a {
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+    width: 10rem;
+  }
+
+  .mega-box {
+    border: 2px solid white;
+    flex-direction: column;
+  }
+  .links {
+    border: none;
+  }
+
+  header .pages a:hover {
+    background-color: transparent;
+  }
+
+  .link {
+    margin-top: 5rem;
+  }
+
+ 
+
+  
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 45%;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .cyber-btn {
+    margin-bottom: 5rem;
+  }
+
+  .btn1 {
+    width: 50rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 560px) {
+  html,
+  body {
+    font-size: 35%;
+  }
+
+  .first-section {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+  }
+}
+@media (max-width: 450px) {
+  html,
+  body {
+    font-size: 30%;
+  }
+
+  .menu{
+    margin-right: 45rem;
+  }
+}

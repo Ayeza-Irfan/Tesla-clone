@@ -434,7 +434,7 @@ header i {
 
 #model3 {
   width: 100%;
-  height: 60rem;
+  height: 66rem;
   background-image: url("./images/car.jpg");
   background-size: cover;
   background-position: center;
@@ -468,6 +468,7 @@ header i {
   outline: none;
   border: none;
   border-radius: 1rem;
+  /* transform: scale(1.5); */
 }
 
 .buttons {
@@ -475,6 +476,7 @@ header i {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  
 }
 .one {
   color: black;
@@ -492,7 +494,7 @@ header i {
 }
 #modelY {
   width: 100%;
-  height: 65rem;
+  height: 60rem;
   background-image: url("./images/ModelY.jpg");
   background-size: cover;
   background-position: center;
@@ -505,7 +507,7 @@ header i {
 }
 #modelX {
   width: 100%;
-  height: 60rem;
+  height: 66rem;
   background-image: url("./images/modelx.jpg");
   background-size: cover;
   background-position: center;
@@ -536,7 +538,7 @@ header i {
 
 #cyber {
   width: 100%;
-  height: 65rem;
+  height: 66rem;
   background-image: url("./images/ttruck.jpg");
   background-size: cover;
   background-position: center;
@@ -608,7 +610,7 @@ header i {
 }
 #accessories {
   width: 100%;
-  height: 60rem;
+  height: 66rem;
   background-image: url("./images/charge.jpg");
   background-size: cover;
   background-position: center;
@@ -652,10 +654,10 @@ footer a {
   }
 
   .menu {
-    font-size: 2rem;
+    font-size: 3rem;
     display: block;
     z-index: 3;
-    margin-right: 47rem;
+    margin-right: 49rem;
   }
 
   .pages {
@@ -701,15 +703,51 @@ footer a {
     margin-top: 5rem;
   }
 
- 
-
-  
+  .logo{
+    width: 60rem;
+  }
 }
 
 @media (max-width: 768px) {
   html,
   body {
     font-size: 45%;
+  }
+
+  
+  
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    height: 36rem;
+    
+  }
+  footer a{
+    font-size: 2rem;
+  }
+
+  .btn1{
+    font-size: 1.8rem;
+    transform: scale(1.1);
+  }
+
+}
+
+
+
+@media (max-width: 570px) {
+  html,
+  body {
+    font-size: 35%;
+  }
+
+  .first-section {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
   }
 
   .buttons {
@@ -724,30 +762,14 @@ footer a {
   }
 
   .btn1 {
-    width: 50rem;
+    /* width: 50rem;
     height: 5rem;
-    font-size: 2rem;
+    font-size: 2rem; */
+    transform: scale(1.5);
+    width: 45rem;
+    font-size: 1.8rem;
   }
-
-  footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-  }
-}
-
-@media (max-width: 560px) {
-  html,
-  body {
-    font-size: 35%;
-  }
-
-  .first-section {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: start;
-  }
+  
 }
 @media (max-width: 450px) {
   html,
@@ -755,7 +777,9 @@ footer a {
     font-size: 30%;
   }
 
-  .menu{
+  .menu {
     margin-right: 45rem;
   }
+
+  
 }

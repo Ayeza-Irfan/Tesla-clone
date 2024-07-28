@@ -690,7 +690,7 @@ footer a {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     padding-right: 0.3rem;
     z-index: 2;
-    height: 85rem;
+    height: 90rem;
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;

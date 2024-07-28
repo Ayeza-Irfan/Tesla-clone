@@ -17,7 +17,7 @@ body {
 
 .container {
   width: 100%;
-  height: 60rem;
+  height: 66rem;
   background-image: url("./images/mainpage.png");
   background-position: center;
   background-size: cover;
@@ -41,6 +41,16 @@ header {
   border: 0.1rem solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
   display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "Menu";
+ 
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "x";
+  padding:1rem;
 }
 
 header .logo {
@@ -315,7 +325,7 @@ header i {
 
 .content .text {
   width: 40%;
-  margin-top: 3rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -468,7 +478,7 @@ header i {
   outline: none;
   border: none;
   border-radius: 1rem;
-  /* transform: scale(1.5); */
+  
 }
 
 .buttons {
@@ -641,7 +651,7 @@ footer a {
     font-size: 55%;
   }
   .container {
-    height: 90rem;
+    height: 95rem;
   }
 
   .content {
@@ -652,12 +662,22 @@ footer a {
     align-items: center;
     gap: 7rem;
   }
+  .text p{
+    font-size: 2.2rem;
+    
+  }
 
   .menu {
     font-size: 3rem;
     display: block;
     z-index: 3;
-    margin-right: 49rem;
+  
+   
+    margin-right:-55rem;
+  }
+
+  .icons i{
+    display: none;
   }
 
   .pages {
@@ -680,8 +700,10 @@ footer a {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
+ 
+
   .pages li a {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 1rem;
     display: block;
     width: 10rem;
@@ -694,6 +716,18 @@ footer a {
   .links {
     border: none;
   }
+  .links p{
+    font-size: 2.2rem;
+    margin:2rem;
+    
+  }
+  .link p{
+    font-size: 2rem;
+  }
+
+  .icons i{
+    font-size: 3rem;
+  }
 
   header .pages a:hover {
     background-color: transparent;
@@ -705,6 +739,14 @@ footer a {
 
   .logo{
     width: 60rem;
+  }
+
+  .car h5{
+    font-size: 2rem;
+  }
+
+  .inline{
+    display: none;
   }
 }
 
@@ -762,9 +804,6 @@ footer a {
   }
 
   .btn1 {
-    /* width: 50rem;
-    height: 5rem;
-    font-size: 2rem; */
     transform: scale(1.5);
     width: 45rem;
     font-size: 1.8rem;
@@ -777,9 +816,7 @@ footer a {
     font-size: 30%;
   }
 
-  .menu {
-    margin-right: 45rem;
-  }
+  
 
   
 }
